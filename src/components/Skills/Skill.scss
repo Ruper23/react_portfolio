@@ -1,0 +1,23 @@
+.skill{
+  width: 150px;
+  height: 150px;
+  background: rgba(96, 231, 250, 0.14);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), -2px -2px 4px -2px #60E7FA, inset -3px -3px 10px -4px rgba(24, 24, 24, 0.6), inset 3px 3px 8px -7px #60E7FA;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.skill-img{
+  width: 60px;
+  height: 60px;
+}
+.skill-bar{
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: rgba(96, 231, 250, 0.22);
+  border-radius: 0px 0px 10px 10px;
+}

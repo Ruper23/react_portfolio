@@ -1,0 +1,59 @@
+@import '../../index.scss';
+.contact-form{
+  display: flex;
+  flex-direction: column;
+}
+.form-title{
+  @include h3-text;
+  font-size: 30px;
+}
+.contact-form label{
+  @include h3-text;
+  font-size: 18px;
+  color: $color_blue;
+  line-height: normal;
+  margin: 5px 0;
+}
+
+.contact-form input,
+.contact-form textarea{
+  background-color: rgba($color: $color_blue , $alpha: .3);
+  width: 350px;
+  height: 35px;
+  font-size: 16px;
+  color: $color_white;
+  border-radius: 5px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), -2px -2px 4px -2px #60E7FA, inset -3px -3px 10px -4px rgba(24, 24, 24, 0.6), inset 3px 3px 8px -7px #60E7FA;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+  &:focus{
+    box-shadow: inset 0 0 5px 1px $color_blue_active;
+  }
+  &:active{
+    background-color: rgba($color: $color_blue , $alpha: .3);
+  }
+}
+.contact-form textarea{
+  height: 100px;
+  width: 340px;
+  resize: none;
+  outline: none;
+  padding: 10px 0 0 10px;
+  border: none;
+}
+.contact-form button{
+  width: 140px;
+  height: 50px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), -2px -2px 4px -2px #60E7FA, inset -3px -3px 10px -4px rgba(24, 24, 24, 0.6), inset 3px 3px 8px -7px #60E7FA;
+  background-color: rgba($color: $color_blue , $alpha: .7);
+  font-size: 18px;
+  font-family: 'Montserrat';
+  color: $color_white;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+  &:hover{
+    background: rgba($color: $color_blue_active , $alpha: .7);
+  }
+}

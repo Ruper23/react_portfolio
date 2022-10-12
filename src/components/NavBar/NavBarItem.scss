@@ -1,0 +1,48 @@
+@import '../../index.scss';
+
+.nav-body{
+  max-width: 220px;
+  height: 100%;
+  display: inline-flex;
+  gap: 15px;
+  flex-direction: column;
+  margin: 140px 0 0 140px;
+
+}
+.nav-body button{
+  display: inline;
+  text-align: left;
+}
+.nav-item{
+  @include menu-text;
+  color: $color_white;
+  cursor: pointer;
+  display: inline;
+  min-width: 100%;
+  transition: all 0.3s ease;
+}
+.nav-item:hover{
+  color: $color_blue;
+}
+.nav-item.active{
+  color: $color_blue_active;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.nav-item.active::after,
+.nav-item.active::before{
+  content: '';
+  width: 30px;
+  height: 2px;
+  background: $color_blue_active;
+  position: absolute;
+  transition: all 0.3s ease;
+}
+.nav-item.active::after{
+  top: 0;
+  right: 0;
+}
+.nav-item.active::before{
+ bottom: 0;
+ left: 0;
+}

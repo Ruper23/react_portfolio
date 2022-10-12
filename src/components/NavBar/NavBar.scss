@@ -1,0 +1,39 @@
+@import '../../index.scss';
+.nav{
+  max-width: 596px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  border-right: 2px solid rgba(96, 231, 250, 0.6);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.nav-footer{
+  width: 100%;
+  height: 173px;
+  display: flex;
+  justify-content: center;
+  align-self: end;
+  
+ 
+}
+.social{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 45px;
+  margin: 0 50px;
+}
+.social-item{
+  height: 50px;
+}
+.social-item a{
+  display: flex;
+  font-size: 50px;
+  color: $color_blue_active;
+  transition: all 0.3s ease;
+}
+.social-item a:hover{
+
+  color: $color_blue;
+}

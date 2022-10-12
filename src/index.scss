@@ -1,0 +1,173 @@
+@font-face {
+  font-family: 'Days One';
+  src: url('fonts/Days One.ttf');
+}
+
+
+$container: clamp(320px,100%,1440px);
+$color_black: #000000;
+$color_white: #ffffff;
+$color_blue: #C5F8FF;
+$color_blue_active: #60E7FA;
+$main_margin: 50px;
+$main_padding: 20px;
+$main_font:"Montserrat", sans-serif;
+$second_font: "Days One", sans-serif;
+$h1:64px;
+$h2:48px;
+$h3:32px;
+$h4:24px;
+$p:16px;
+$maxWidth: 1440;
+/* console log  */
+// *{
+//   box-sizing: border-box;
+//   background: rgb(0 100 0 / 0.1) !important;
+// }
+// ###################################################
+/* Миксины */
+
+
+@mixin adaptiv-font($pcSize, $mobSize) {
+	$addSize: $pcSize - $mobSize;
+	$maxWidth: $maxWidth - 320;
+	font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}
+@mixin menu-text {
+  font: {
+    family: 'Montserrat';
+    style: normal;
+    weight: 600;
+    size: 36px;  
+  }
+  line-height: 44px;
+  color: $color_white;
+}
+@mixin h1-text {
+  font-family: 'Days One';
+  font-weight: 900;
+  font-size: 96px;
+  @include adaptiv-font(96, 40);
+  line-height: 100px;
+  color: $color_blue;
+}
+@mixin h2-text {
+  font-family: 'Days One';
+  font-style: normal;
+  font-weight: 400;
+  @include adaptiv-font(56, 28);
+  line-height: 71px;
+  color: $color_white;
+}
+@mixin h3-text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 55px;
+  color: $color_blue_active;
+}
+@mixin p-text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: $color_white;
+}
+
+// @include large-text;
+// ###################################################
+
+
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+ul,
+li,
+p {
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style: none;
+}
+button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label,
+input,form {
+  margin: 0;
+  padding: 0;
+}
+input {
+  outline: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+}
+.wrapper{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.container{
+  max-width:calc(100vw - 80%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+  margin: 0 auto; 
+}
+.main{
+  flex: 1 1 auto;
+}
+body{
+  background: url('../public/img/background2.jpg') 0 0 / cover no-repeat;
+  	
+backdrop-filter: blur(5px);
+}
+/* ########################################################## */
+.slide-title{
+  @include h3-text;
+  position: relative;
+}
+.slide-title:after,
+.slide-title:before{
+  content: '';
+  width: 30px;
+  height: 2px;
+  background: $color_blue_active;
+  position: absolute;
+  transition: all 0.3s ease;
+}
+.slide-title:after{
+  top: 0;
+  right: 0;
+}
+.slide-title:before{
+ bottom: 0;
+ left: 0;
+}
