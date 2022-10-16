@@ -1,12 +1,12 @@
 @import '../../index.scss';
 
 .nav-body{
-  max-width: 220px;
+  width: 420px;
   height: 100%;
   display: inline-flex;
   gap: 15px;
   flex-direction: column;
-  margin: 140px 0 0 140px;
+  margin: 140px auto;
 
 }
 .nav-body button{

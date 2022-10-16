@@ -1,6 +1,6 @@
 @import '../../index.scss';
 .nav{
-  max-width: 596px;
+  max-width: 396px;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -20,20 +20,20 @@
 .social{
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 45px;
-  margin: 0 50px;
+  justify-content: space-around;
+  width: 100%;
+  
 }
 .social-item{
   height: 50px;
 }
+
 .social-item a{
   display: flex;
   font-size: 50px;
   color: $color_blue_active;
   transition: all 0.3s ease;
-}
-.social-item a:hover{
-
-  color: $color_blue;
+  &:hover{
+    color: $color_blue;
+  }
 }

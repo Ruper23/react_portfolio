@@ -154,20 +154,15 @@ backdrop-filter: blur(5px);
   @include h3-text;
   position: relative;
 }
-.slide-title:after,
+
 .slide-title:before{
   content: '';
-  width: 30px;
+  width: 100px;
   height: 2px;
   background: $color_blue_active;
   position: absolute;
   transition: all 0.3s ease;
+  bottom: -10px;
+  left: 0;
 }
-.slide-title:after{
-  top: 0;
-  right: 0;
-}
-.slide-title:before{
- bottom: 0;
- left: 0;
-}
+

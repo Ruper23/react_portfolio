@@ -2,6 +2,7 @@
 .contact-form{
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .form-title{
   @include h3-text;
@@ -42,6 +43,75 @@
   padding: 10px 0 0 10px;
   border: none;
 }
+.frog{
+  width: 250px;
+  height: 260px;
+  position: absolute;
+  bottom: -140px;
+  left: 0;
+  pointer-events: none;
+  background: url('../../../public/img/frog/1.png');
+  background-size: 150%;
+  background-position: center;
+  transform: translateX(-400px);
+  transition: all 0.3s;
+  
+}
+
+.frog.active{
+  transform: translate(-340px);
+}
+.frog.animated{
+  animation: animated 2s ease;
+}
+@keyframes animated {
+  0%{
+    transform: translate(-340px);
+    background-image: url('../../../public/img/frog/1.png');
+  }
+  10%{
+    transform: translate(-250px);
+    background-image: url('../../../public/img/frog/2.png');
+  }
+  20%{
+    transform: translate(-200px);
+    background-image: url('../../../public/img/frog/3.png');
+  }
+  30%{
+    transform: translate(-100px);
+    background-image: url('../../../public/img/frog/4.png');
+  }
+  40%{
+    transform: translate(0px);
+    background-image: url('../../../public/img/frog/5.png');
+  }
+  50%{
+    transform: translate(50px);
+    background-image: url('../../../public/img/frog/6.png');
+  }
+  60%{
+    transform: translate(50px);
+    background-image: url('../../../public/img/frog/7.png');
+  }
+  70%{
+    transform: translate(50px);
+    background-image: url('../../../public/img/frog/8.png');
+  }
+  80%{
+    transform: translate(50px);
+    background-image: url('../../../public/img/frog/8.png');
+  }
+  90%{
+    transform: translate(50px);
+    background-image: url('../../../public/img/frog/9.png');
+  }
+  100%{
+    transform: translate(50px);
+    background-image: url('../../../public/img/frog/10.png');
+  }
+
+}
+
 .contact-form button{
   width: 140px;
   height: 50px;
@@ -53,7 +123,10 @@
   color: $color_white;
   transition: all 0.3s ease;
   margin-top: 20px;
+ 
+  cursor: pointer;
   &:hover{
     background: rgba($color: $color_blue_active , $alpha: .7);
   }
+ 
 }

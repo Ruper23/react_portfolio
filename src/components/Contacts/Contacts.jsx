@@ -14,6 +14,7 @@ const Contacts = () => {
           <li className='contats-list__list'><a href="https://www.linkedin.com/in/vitali-skarbinski-fe/"><i className="fa-brands fa-linkedin"></i>LinkedIn</a></li>
         </ul>
         <ContactForm />
+
       </div>
     </section >
   )
