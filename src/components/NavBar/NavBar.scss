@@ -1,11 +1,12 @@
 @import '../../index.scss';
 .nav{
-  max-width: 396px;
   height: 100vh;
   display: flex;
+  flex: 1 1 400px;
   flex-direction: column;
   border-right: 2px solid rgba(96, 231, 250, 0.6);
   background: rgba(255, 255, 255, 0.05);
+  justify-content: space-between;
 }
 
 .nav-footer{

@@ -1,25 +1,22 @@
 @import '../../index.scss';
 
 .nav-body{
-  width: 420px;
-  height: 100%;
-  display: inline-flex;
+  
+  display: flex;
   gap: 15px;
   flex-direction: column;
-  margin: 140px auto;
+  margin: 140px 0;
+  padding-left: 30px;
 
 }
-.nav-body button{
-  display: inline;
-  text-align: left;
-}
+
 .nav-item{
   @include menu-text;
   color: $color_white;
   cursor: pointer;
-  display: inline;
-  min-width: 100%;
+  
   transition: all 0.3s ease;
+  align-self: start;
 }
 .nav-item:hover{
   color: $color_blue;
@@ -27,6 +24,15 @@
 .nav-item.active{
   color: $color_blue_active;
   position: relative;
+  transition: all 0.3s ease;
+}
+.nav-item:after,
+.nav-item:before{
+  content: '';
+  width: 0px;
+  height: 2px;
+  background: $color_blue_active;
+  position: absolute;
   transition: all 0.3s ease;
 }
 .nav-item.active::after,

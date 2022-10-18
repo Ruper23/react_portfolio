@@ -6,15 +6,15 @@ const ContactForm = () => {
 
 
   const frogLooksHandler = () => {
-    frog.classList.toggle('active')
+    // frog.classList.toggle('active')
   }
   const frogActionHandler = (e) => {
-    e.preventDefault()
-    frog.classList.add('animated')
-    frog.classList.add('active')
-    setTimeout(() => {
-      frog.classList.remove('animated')
-    }, 5000)
+    // e.preventDefault()
+    // frog.classList.add('animated')
+    // frog.classList.add('active')
+    // setTimeout(() => {
+    //   frog.classList.remove('animated')
+    // }, 5000)
   }
 
 

@@ -1,22 +1,53 @@
-import React from "react";
+import React, { useState } from "react";
 import NavBar from "./components/NavBar/NavBar";
 import './App.scss'
-// import Main from "./components/Main/Main";
-// import AboutMe from "./components/AboutMe/AboutMe";
-// import Expirience from "./components/Expirience/Expirience";
-// import Skills from "./components/Skills/Skills";
+import Main from "./components/Main/Main";
+import Home from "./components/Home/Home";
+import AboutMe from "./components/AboutMe/AboutMe";
+import Expirience from "./components/Expirience/Expirience";
+import Skills from "./components/Skills/Skills";
 import Contacts from "./components/Contacts/Contacts";
-// import Portfolio from "./components/Portfolio/Portfolio";
-function App() {
+import Portfolio from "./components/Portfolio/Portfolio";
+const App = () => {
+
+  const content = [
+    {
+      key: 0,
+      section: <Home />
+    },
+    {
+      key: 1,
+      section: <AboutMe />
+    },
+    {
+      key: 2,
+      section: <Expirience />
+    },
+    {
+      key: 3,
+      section: <Skills />
+    },
+    {
+      key: 4,
+      section: <Contacts />
+    },
+    {
+      key: 5,
+      section: <Portfolio />
+    },
+  ]
+  const [section, setSection] = useState(0)
+
+  const changeSection = (section) => {
+
+    setSection(section)
+  }
   return (
     <div className="app">
-      <NavBar />
-      {/* <Main /> */}
-      {/* <AboutMe /> */}
-      {/* <Expirience /> */}
-      {/* <Skills /> */}
-      <Contacts />
-      {/* <Portfolio /> */}
+      <NavBar onChangeSection={changeSection} />
+      <Main
+        content={content}
+        section={section} />
     </div>
   );
 }
