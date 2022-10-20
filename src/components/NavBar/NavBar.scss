@@ -7,8 +7,18 @@
   border-right: 2px solid rgba(96, 231, 250, 0.6);
   background: rgba(255, 255, 255, 0.05);
   justify-content: space-between;
+  transition: all 0.3s ease;
+    @media (max-width:767px) {
+      position: fixed;
+      background: rgba(0, 0, 0, 0.85);
+      min-width: 320px;
+      z-index: 5;
+      transform: translateX(-105%);
+    }
 }
-
+.nav.active{
+  transform: translateX(0);
+}
 .nav-footer{
   width: 100%;
   height: 173px;
@@ -36,5 +46,13 @@
   transition: all 0.3s ease;
   &:hover{
     color: $color_blue;
+  }
+  @media (max-width:768px) {
+    font-size: 40px;
+    
+  }
+  @media (max-width:426px) {
+    font-size: 35px;
+    
   }
 }

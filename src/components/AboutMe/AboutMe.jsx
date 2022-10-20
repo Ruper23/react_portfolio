@@ -5,7 +5,7 @@ const AboutMe = () => {
     <section className="about">
       <div className="about-content">
         <div className="content-img">
-          <img src="../../../img/About.jpg" alt="MyPhoto" />
+          <img src="./public/img/About.jpg" alt="MyPhoto" />
         </div>
         <div className="content-description">
           <h3 className="description-title slide-title">Обо мне</h3>

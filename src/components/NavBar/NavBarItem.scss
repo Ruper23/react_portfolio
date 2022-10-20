@@ -7,7 +7,9 @@
   flex-direction: column;
   margin: 140px 0;
   padding-left: 30px;
-
+ @media (max-height: 625px) {
+  margin: 70px 0 40px;
+ }
 }
 
 .nav-item{

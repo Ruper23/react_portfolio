@@ -8,6 +8,8 @@ import Expirience from "./components/Expirience/Expirience";
 import Skills from "./components/Skills/Skills";
 import Contacts from "./components/Contacts/Contacts";
 import Portfolio from "./components/Portfolio/Portfolio";
+import Burger from "./components/Burger/Burger";
+
 const App = () => {
 
   const content = [
@@ -44,11 +46,13 @@ const App = () => {
   }
   return (
     <div className="app">
+      <Burger />
       <NavBar onChangeSection={changeSection} />
       <Main
         content={content}
         section={section} />
     </div>
+
   );
 }
 

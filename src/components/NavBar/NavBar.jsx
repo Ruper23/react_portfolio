@@ -2,13 +2,26 @@ import React from 'react'
 import './NavBar.scss'
 import NavBarItem from './NavBarItem'
 
+
 const NavBar = (props) => {
   const changeSection = (newSection) => {
     props.onChangeSection(newSection)
   }
+  const menuCloseHandler = e => {
+    const burgIcon = document.querySelector('.burger__icon');
+    const burgMenu = document.querySelector('.nav');
+    const bodyFixed = document.querySelector('body')
+    if (e.target) {
+      burgMenu.classList.toggle('active');
+      burgIcon.classList.toggle('active');
+      bodyFixed.classList.toggle('active');
+    }
+  }
   return (
-    <nav className="nav">
-      <NavBarItem onChangeSection={changeSection} />
+    <nav className="nav" onClick={menuCloseHandler}>
+      <NavBarItem
+        onChangeSection={changeSection}
+      />
       <div className="nav-footer">
         <ul className="social">
           <li className="social-item">

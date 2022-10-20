@@ -1,7 +1,7 @@
 import './NavBarItem.scss'
 const NavBarItem = (props) => {
 
-  const activeSection = e => {
+  const activeSectionHandler = e => {
     let currBtn = e.target
     const navItem = document.querySelectorAll('.nav-item')
     let navItemKey = e.target.dataset.btn
@@ -9,13 +9,12 @@ const NavBarItem = (props) => {
       elem.classList.remove('active')
     })
     currBtn.classList.add('active')
-
     props.onChangeSection(navItemKey)
   }
 
-
   return (
-    <div className="nav-body" onClick={activeSection}>
+    <div className="nav-body" onClick={activeSectionHandler}>
+
       <button className="nav-item active" data-btn='0'>Главная
       </button>
       <button className="nav-item" data-btn='1'>Обо Мне
@@ -29,7 +28,6 @@ const NavBarItem = (props) => {
       <button className="nav-item" data-btn='5'>Портфолио
       </button>
     </div>
-
   )
 }
 export default NavBarItem
