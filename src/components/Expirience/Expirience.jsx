@@ -6,12 +6,13 @@ const Expirience = () => {
     <section className="expirience">
       <div className="description">
         <h3 className="description__title slide-title">Опыт</h3>
-        <p className="description__text p-text">Трудолюбив и привык добиваться поставленных целей.</p>
-        <p className="description__text p-text">Всегда нравилось выполнять работу и видеть  результат. Большое удовольствие приносит
-          решать  задачи и воплощать в жизнь задумки, особенно, если они нестандартные.</p>
-        <p className="description__text p-text">Хорошо развиты воображение и дизайнерские навыки. Коммуникабельный, легко обучаюсь, усердный, самоучка.</p>
-        <p className="description__text p-text">Как хобби развиваю ВЭБ разработку, создание сайтов и браузерных приложений.
-          Неплохо владею такими языками как HTML, CSS, JavaScript.</p>
+        <p className="description__text p-text">Небольшой опыт в разработке нескольких Одно-страничных сайтов.</p>
+        <p className="description__text p-text">10 лет работаю в сфере деревообработки на позиции оператора ЧПУ станков, с такими языками как G-Code и Visual Basic.</p>
+        <p className="description__text p-text">Есть опыт Тим лидинга в своей сфере.</p>
+        <p className="description__text p-text">Коммерчиский опыт совсем не большой:</p>
+        <p className="description__text p-text">Помогал знакомому готовый сайт адаптировать под мобильные устройства, за символическую плату.</p>
+        <p className="description__text p-text">Редактировал контет и стилизацию элементов .</p>
+        <p className="description__text p-text">В основном писал Лендинги и маленькие приложения для своего удавольствия.</p>
       </div>
     </section>
   )

@@ -3,8 +3,12 @@ const NavBarItem = (props) => {
 
   const activeSectionHandler = e => {
     let currBtn = e.target
+    const navBody = document.querySelector('.nav__body')
     const navItem = document.querySelectorAll('.nav__item')
     let navItemKey = e.target.dataset.btn
+    if (e.target === navBody) {
+      return
+    }
     navItem.forEach(elem => {
       elem.classList.remove('active')
     })
@@ -14,7 +18,6 @@ const NavBarItem = (props) => {
 
   return (
     <div className="nav__body" onClick={activeSectionHandler}>
-
       <button className="nav__item active" data-btn='0'>Главная
       </button>
       <button className="nav__item" data-btn='1'>Обо Мне

@@ -54,18 +54,24 @@ const Portfolio = () => {
     },
     {
       key: 9,
-      name: 'Museum',
-      src: 'img/portfolio/museum.jpg',
-      link: 'https://rolling-scopes-school.github.io/ruper23-JSFE2021Q3/museum-dom/'
-    },
-    {
-      key: 10,
       name: 'Icrowedme',
       src: 'img/portfolio/crowd-me.jpg',
       link: 'https://ruper23.github.io/icrowedmw-no-/'
     },
     {
+      key: 10,
+      name: 'Momentum',
+      src: 'img/portfolio/momentum.png',
+      link: 'https://rolling-scopes-school.github.io/ruper23-JSFE2021Q3/momentum/'
+    },
+    {
       key: 11,
+      name: 'Museum',
+      src: 'img/portfolio/museum.jpg',
+      link: 'https://rolling-scopes-school.github.io/ruper23-JSFE2021Q3/museum-dom/'
+    },
+    {
+      key: 12,
       name: 'Kaberda',
       src: 'img/portfolio/kaberda.jpg',
       link: 'https://ruper23.github.io/kaberda/'

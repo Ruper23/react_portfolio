@@ -32,6 +32,9 @@
     position: absolute;
     transition: all 0.3s ease;
   }
+  @media (max-height: 540px){
+    line-height:50px;
+  }
 }
 .nav__item.active{
   color: $color_blue_active;

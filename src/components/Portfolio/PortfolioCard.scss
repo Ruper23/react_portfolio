@@ -20,16 +20,16 @@
     &:hover > .card__img{
     background-size: 110% !important;
     }
-    &:last-child{
-      margin-bottom: 30px;
+    @media (max-width: 1024px){
+      &:hover > .card__img{
+        background-size: cover !important;
+       }
     }
     @media (max-width: 768px){
       & > .card__title{
         transform: translatey(0);
       }
-      &:hover > .card__img{
-        background-size: cover !important;
-      }
+     
       & > .card__img:before{
         height: 0px;
       }
