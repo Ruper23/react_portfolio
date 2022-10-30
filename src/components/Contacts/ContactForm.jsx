@@ -2,20 +2,20 @@ import './ContactForm.scss'
 import React from 'react'
 
 const ContactForm = () => {
-  // const frog = document.querySelector('.frog')
-
-
-  const frogLooksHandler = () => {
-    // frog.classList.toggle('active')
-  }
-  const frogActionHandler = (e) => {
-    // e.preventDefault()
-    // frog.classList.add('animated')
-    // frog.classList.add('active')
-    // setTimeout(() => {
-    //   frog.classList.remove('animated')
-    // }, 5000)
-  }
+  /*   const frog = document.querySelector('.frog')
+  
+  
+    const frogLooksHandler = () => {
+      frog.classList.toggle('active')
+    }
+    const frogActionHandler = (e) => {
+      e.preventDefault()
+      frog.classList.add('animated')
+      frog.classList.add('active')
+      setTimeout(() => {
+        frog.classList.remove('animated')
+      }, 5000)
+    } */
 
 
 
@@ -29,13 +29,13 @@ const ContactForm = () => {
       <label htmlFor="text">Введите текст</label>
       <textarea type="text" id='text' />
       <button type='submit'
-        onMouseOver={frogLooksHandler}
+      /*   onMouseOver={frogLooksHandler}
         onMouseLeave={frogLooksHandler}
-        onClick={frogActionHandler}>Отправить</button>
-      <div className="frog">
+        onClick={frogActionHandler} */>Отправить</button>
+      {/* <div className="frog">
 
       </div>
-
+ */}
 
     </form>
   )

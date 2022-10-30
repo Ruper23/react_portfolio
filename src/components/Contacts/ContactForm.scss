@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 30px 0 0 0;
+  margin: 30px 0 30px 0;
 }
 .form-title{
   @include h3-text;
@@ -50,7 +50,7 @@
     width:250px;
    }
 }
-.frog{
+/* .frog{
   width: 250px;
   height: 260px;
   position: absolute;
@@ -117,7 +117,7 @@
     background-image: url('../../../public/img/frog/10.png');
   }
 
-}
+} */
 
 .contact-form button{
   width: 140px;

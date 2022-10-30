@@ -35,16 +35,16 @@ const NavBar = (props) => {
             <a href="https://www.linkedin.com/in/vitali-skarbinski-fe/" target='_blank' rel='noreferrer'><i className="fa-brands fa-linkedin"></i></a>
           </li>
           <li className="social__item">
-            <a href="https://www.linkedin.com/in/vitali-skarbinski-fe/" target='_blank' rel='noreferrer'><i className="fa-brands fa-square-instagram"></i></a>
+            <a href="https://www.instagram.com/ruper292/?igshid=YmMyMTA2M2Y%3D" target='_blank' rel='noreferrer'><i className="fa-brands fa-square-instagram"></i></a>
           </li>
           <li className="social__item">
-            <a href="https://www.linkedin.com/in/vitali-skarbinski-fe/" target='_blank' rel='noreferrer'><i className="fa-brands fa-square-facebook"></i></a>
+            <a href="https://www.facebook.com/ruper.rup/" target='_blank' rel='noreferrer'><i className="fa-brands fa-square-facebook"></i></a>
           </li>
           <li className="social__item">
-            <a href="https://www.linkedin.com/in/vitali-skarbinski-fe/" target='_blank' rel='noreferrer'><i className="fa-brands fa-vk"></i></a>
+            <a href="https://vk.com/ruper23" target='_blank' rel='noreferrer'><i className="fa-brands fa-vk"></i></a>
           </li>
           <li className="social__item">
-            <a href="https://www.linkedin.com/in/vitali-skarbinski-fe/" target='_blank' rel='noreferrer'><i className="fa-brands fa-square-github"></i></a>
+            <a href="https://github.com/Ruper23" target='_blank' rel='noreferrer'><i className="fa-brands fa-square-github"></i></a>
           </li>
         </ul>
       </div>
