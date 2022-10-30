@@ -2,7 +2,7 @@ import './ContactForm.scss'
 import React from 'react'
 
 const ContactForm = () => {
-  const frog = document.querySelector('.frog')
+  // const frog = document.querySelector('.frog')
 
 
   const frogLooksHandler = () => {
@@ -20,7 +20,7 @@ const ContactForm = () => {
 
 
   return (
-    <form action="da" className="contact-form">
+    <form action="#" className="contact-form" id='form'>
       <h4 className='form-title'>Обратная Связь</h4>
       <label htmlFor="name">Ваше имя:</label>
       <input type="text" id='name' />

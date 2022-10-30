@@ -1,0 +1,53 @@
+@import '../../index.scss';
+.course{
+  display: flex;
+  gap: 50px;
+  padding: 10px;
+  background: rgba($color: #ffffff, $alpha: 0.2);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), -2px -2px 4px -2px #60E7FA, inset -3px -3px 10px -4px rgba(24, 24, 24, 0.6), inset 3px 3px 8px -7px #60E7FA;
+    @media (max-width: 480px){
+      gap: 25px;
+      padding: 10px 3px 10px 10px;
+    }
+}
+.course__img{
+  width: 200px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+    &:hover{
+      box-shadow: 0 0 20px 1px $color_blue_active;
+    }
+    @media (max-width: 550px){
+    width: 120px;
+    height: 60px;
+    align-self: center;
+    } 
+}
+.course__img-modal{
+  transition: 0.3s all;
+  border-radius: 20px;
+  box-shadow: 0 0 60px 1px $color_blue_active;
+  cursor: pointer;
+ object-fit: cover;
+ width: 100%;
+}
+// .course__img-modal.active{
+//   scale: 11;
+//   width: 60%;
+//   height: 50%;
+//   backdrop-filter: blur(100px);
+// }
+
+.course__title{
+  @include menu-text;
+  align-self: center;
+  @include adaptiv-font(36, 20,44,32);
+  color: $color_blue;
+}
+.english{
+  margin: 0 0 30px 0;
+  @include adaptiv-font(36, 20,44,32);
+}

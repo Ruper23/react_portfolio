@@ -73,9 +73,9 @@ const Portfolio = () => {
   ]
   return (
     <section className="portfolio">
-      <div className="portfolio-wrap">
-        <h3 className="portfolio-title slide-title">Портфолио</h3>
-        <div className="portfolio-cards">
+      <div className="portfolio__wrap">
+        <h3 className="portfolio__title slide-title">Портфолио</h3>
+        <div className="portfolio__cards">
           {cards.map(card => {
             return (
               <PortfolioCard

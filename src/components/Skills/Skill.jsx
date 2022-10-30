@@ -7,8 +7,8 @@ const Skill = props => {
 
   return (
     <div className="skill">
-      <img src={props.src} alt="icon" className="skill-img" />
-      <div className="skill-bar" style={{ height: skillBarHeight }}></div>
+      <img src={props.src} alt="icon" className="skill__img" />
+      <div className="skill__bar" style={{ height: skillBarHeight }}></div>
     </div>
   )
 }

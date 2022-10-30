@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 30px 0 0 0;
 }
 .form-title{
   @include h3-text;
@@ -34,6 +35,9 @@
   &:active{
     background-color: rgba($color: $color_blue , $alpha: .3);
   }
+  @media (max-width: 425px){
+   width:250px;
+  }
 }
 .contact-form textarea{
   height: 100px;
@@ -42,6 +46,9 @@
   outline: none;
   padding: 10px 0 0 10px;
   border: none;
+  @media (max-width: 425px){
+    width:250px;
+   }
 }
 .frog{
   width: 250px;

@@ -20,10 +20,10 @@ $h4:24px;
 $p:16px;
 $maxWidth: 1440;
 /* console log  */
-// *{
-//   box-sizing: border-box;
-//   background: rgba(0, 100, 0 , 0.1) !important;
-// }
+/* *{
+  box-sizing: border-box;
+  background: rgba(0, 100, 0 , 0.1) !important;
+} */
 // ###################################################
 /* Миксины */
 
@@ -37,20 +37,16 @@ $maxWidth: 1440;
 }
 
 @mixin menu-text {
- 
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    @include adaptiv-font(36, 28,44,32);  
-  
- 
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  @include adaptiv-font(36, 28,44,32);  
   color: $color_white;
 }
 @mixin h1-text {
   font-family: 'Days One';
   font-weight: 900;
   @include adaptiv-font(96, 40,100,50);
-
   color: $color_blue;
 }
 @mixin h2-text {
@@ -58,23 +54,20 @@ $maxWidth: 1440;
   font-style: normal;
   font-weight: 400;
   @include adaptiv-font(56, 28,71,45);
-
   color: $color_white;
 }
 @mixin h3-text {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
-  font-size: 45px;
-  line-height: 55px;
+  @include adaptiv-font(45, 28,55,38);
   color: $color_blue_active;
 }
 @mixin p-text {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
+  @include adaptiv-font(18, 14,22,18);
   color: $color_white;
 }
 
@@ -137,11 +130,15 @@ input {
 }
 .main{
   flex: 1 1 auto;
+  min-height: 100%;
 }
 body{
   background: url('../public/img/background2.jpg') 0 0 / cover no-repeat;
-  	
+  background-attachment: fixed;
 backdrop-filter: blur(5px);
+}
+#root{
+  height: 100%;
 }
 /* ########################################################## */
 .slide-title{
@@ -160,3 +157,6 @@ backdrop-filter: blur(5px);
   left: 0;
 }
 
+.p-text{
+  @include p-text;
+}

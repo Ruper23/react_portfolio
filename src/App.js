@@ -9,6 +9,7 @@ import Skills from "./components/Skills/Skills";
 import Contacts from "./components/Contacts/Contacts";
 import Portfolio from "./components/Portfolio/Portfolio";
 import Burger from "./components/Burger/Burger";
+import Courses from "./components/Courses/Courses";
 
 const App = () => {
 
@@ -31,14 +32,18 @@ const App = () => {
     },
     {
       key: 4,
-      section: <Contacts />
+      section: <Courses />
     },
     {
       key: 5,
+      section: <Contacts />
+    },
+    {
+      key: 6,
       section: <Portfolio />
     },
   ]
-  const [section, setSection] = useState(0)
+  const [section, setSection] = useState('0')
 
   const changeSection = (section) => {
 
@@ -53,7 +58,7 @@ const App = () => {
         section={section} />
     </div>
 
-  );
+  )
 }
-
-export default App;
+console.log('Приложение не закончено, есть еще пару идей с анимациями на отправку формы \n и реализация свайпов для небольших разрешений\n \n Запись только для себя, ее все равно никто не прочитает...');
+export default App
