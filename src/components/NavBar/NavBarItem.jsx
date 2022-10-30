@@ -3,17 +3,25 @@ const NavBarItem = (props) => {
 
   const activeSectionHandler = e => {
     let currBtn = e.target
+    const main = document.querySelector('.main')
     const navBody = document.querySelector('.nav__body')
     const navItem = document.querySelectorAll('.nav__item')
     let navItemKey = e.target.dataset.btn
     if (e.target === navBody) {
       return
     }
-    navItem.forEach(elem => {
-      elem.classList.remove('active')
-    })
-    currBtn.classList.add('active')
-    props.onChangeSection(navItemKey)
+    main.classList.add('active')
+    setTimeout(() => {
+      navItem.forEach(elem => {
+        elem.classList.remove('active')
+      })
+      currBtn.classList.add('active')
+      props.onChangeSection(navItemKey)
+    }, 200)
+    setTimeout(() => {
+      main.classList.remove('active')
+    }, 1000)
+
   }
 
   return (

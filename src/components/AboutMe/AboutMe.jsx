@@ -10,13 +10,13 @@ const AboutMe = () => {
         <div className="description">
           <h3 className="description__title slide-title">Обо мне</h3>
           <p className="description__text p-text">Трудолюбив и привык добиваться поставленных целей.</p>
-          <p className="description__text p-text">Всегда нравилось выполнять работу и видеть  результат. Большое удовольствие приносит
+          <p className="description__text p-text">Всегда довожу дело до результата. Большое удовольствие приносит
             решать  задачи и воплощать в жизнь задумки, особенно, если они нестандартные.
 
           </p>
           <p className="description__text p-text">Хорошо развиты воображение и дизайнерские навыки. Коммуникабельный, легко обучаюсь, усердный, самоучка.</p>
-          <p className="description__text p-text">Пока как хобби развиваю ВЭБ разработку, создание сайтов и браузерных приложений.
-            Планирую от хобби перейти к полноценной работе.</p>
+          <p className="description__text p-text">Пока как хобби развиваю ВЭБ-разработку, создание сайтов и браузерных приложений.</p>
+          <p className="description__text p-text">Планирую хобби превратить в полноценную работу.</p>
         </div>
       </div>
     </section>
