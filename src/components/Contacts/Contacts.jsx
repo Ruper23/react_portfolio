@@ -1,4 +1,4 @@
-/* import ContactForm from './ContactForm' */
+import ContactForm from './ContactForm'
 import './Contacts.scss'
 const Contacts = () => {
   return (
@@ -14,8 +14,7 @@ const Contacts = () => {
           <li className='contats__list-item'><i className="fa-brands fa-discord"></i>Ruper#8847</li>
           <li className='contats__list-item'><a href="pdf/A4.pdf" download><i className="fa-solid fa-file-arrow-down"></i>Скачать CV</a></li>
         </ul>
-        {/*   <ContactForm />
- */}
+        <ContactForm />
       </div>
     </section >
   )
