@@ -20,7 +20,7 @@ const ContactForm = () => {
 
   const [state, handleSubmit] = useForm("mvoyweal");
   if (state.succeeded) {
-    return <p className='send-form menu-text'>Спасибо за Обратную связь</p>;
+    return <p className='send-form'>Спасибо за Обратную связь</p>;
   }
 
   return (

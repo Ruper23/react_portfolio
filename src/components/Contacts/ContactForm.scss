@@ -139,4 +139,6 @@
 }
 .send-form{
   margin: 30px auto;
+  @include menu-text;
+  text-align: center;
 }
