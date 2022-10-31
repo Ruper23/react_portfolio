@@ -23,6 +23,9 @@
   transition: 0.3s all;
   scale: 0.1;
   width: 60%;
+  @media (max-width: 425px){
+    width:85%;
+  }
 }
 .modal__content.active{
   scale: 1;

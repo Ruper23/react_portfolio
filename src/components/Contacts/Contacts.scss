@@ -51,9 +51,9 @@
       min-width: 230px;
       }
 }
-.contats__list__list,
-.contats__list__list address,
-.contats__list__list a{
+.contats__list-item,
+.contats__list-item address,
+.contats__list-item a{
   display: flex;
   gap: 30px;
   color: $color_blue;
@@ -63,7 +63,7 @@
   gap: 10px;
   }
 }
-.contats__list__list a{
+.contats__list-item a{
   position: relative;
   &:after{
     content: '';
@@ -77,13 +77,13 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), -2px -2px 4px -2px #60E7FA, inset -3px -3px 10px -4px rgba(24, 24, 24, 0.6), inset 3px 3px 8px -7px #60E7FA;
   }
 }
-.contats__list__list a:hover{
+.contats__list-item a:hover{
   position: relative;
   &:after{
     width: 100%;
   }
 }
-.contats__list__list i {
+.contats__list-item i {
   color: $color_blue_active;
   font-size: 30px;
 }
