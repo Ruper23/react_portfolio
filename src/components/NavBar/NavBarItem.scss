@@ -11,6 +11,9 @@
  @media (max-height: 570px) {
   margin: 50px 0 30px;
  }
+ @media (max-height: 490px) {
+  margin: 40px 0 20px;
+ }
 }
 
 .nav__item{
@@ -34,6 +37,9 @@
   }
   @media (max-height: 540px){
     line-height:50px;
+  }
+  @media (max-height: 490px){
+    line-height:42px;
   }
 }
 .nav__item.active{

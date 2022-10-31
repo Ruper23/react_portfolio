@@ -43,7 +43,7 @@ const App = () => {
       section: <Portfolio />
     },
   ]
-  const [section, setSection] = useState('0')
+  let [section, setSection] = useState('0')
 
   const changeSection = (section) => {
 

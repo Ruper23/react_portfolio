@@ -2,7 +2,7 @@
 .nav{
   height: 100vh;
   display: flex;
-  flex: 1 1 400px;
+  flex: 1 1 398px;
   flex-direction: column;
   border-right: 2px solid rgba(96, 231, 250, 0.6);
   background: rgba(255, 255, 255, 0.05);
@@ -11,12 +11,13 @@
     @media (max-width:767px) {
       position: fixed;
       background: rgba(0, 0, 0, 0.85);
-      min-width: 375px;
+      min-width: 373px;
       z-index: 5;
       transform: translateX(-105%);
     }
     @media (max-width: 375px){
     min-width: 100%;
+    border-right: 2px solid rgba(96, 231, 250, 0.6) inset;
     }
 }
 .nav.active{
@@ -28,18 +29,22 @@
   display: flex;
   justify-content: center;
   align-self: end;
-  
- 
-}
+  @media (max-height: 680px){
+    height: auto;
+  }
+ }
 .social{
   display: flex;
   align-items: center;
   justify-content: space-around;
   width: 100%;
-  
+  margin-bottom: 10px;
 }
 .social__item{
   height: 50px;
+  @media (max-height: 680px){
+    height: auto;
+  }
 }
 
 .social__item a{
