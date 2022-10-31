@@ -20,14 +20,14 @@ const ContactForm = () => {
 
   const [state, handleSubmit] = useForm("mvoyweal");
   if (state.succeeded) {
-    return <p>Спасибо за внимание</p>;
+    return <p className='send-form menu-text'>Спасибо за Обратную связь</p>;
   }
 
   return (
     <form onSubmit={handleSubmit} className="contact-form" id='form'>
       <h4 className='form-title'>Обратная Связь</h4>
       <label htmlFor="name">Ваше имя:</label>
-      <input type="text" id='name' />
+      <input type="text" id='name' name="name" />
       <label htmlFor="email">Адрес почты:</label>
       <input type="email" id='email' name="email" />
       <ValidationError
