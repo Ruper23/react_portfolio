@@ -41,6 +41,9 @@
   @media (max-height: 490px){
     line-height:42px;
   }
+  @media (max-height: 400px){
+    line-height:35px;
+  }
 }
 .nav__item.active{
   color: $color_blue_active;
