@@ -1,16 +1,16 @@
 import './Home.scss'
 const Home = () => {
-  const swipeAnimation = () => {
-
-    if (window.matchMedia("(max-width: 768px)")) {
-      document.querySelector('.home').classList.add('swipe')
-
-    }
-  }
-
+  // const swipeAnimation = () => {
+  //   const home = document.querySelector('.home')
+  //   if (window.matchMedia("(max-width: 768px)")) {
+  //     home.classList.add('swipe')
+  //     setTimeout(() => { home.classList.remove('swipe') }, 3000)
+  //   }
+  // }
+  // swipeAnimation()
 
   return (
-    <section className="home" onLoad={swipeAnimation}>
+    <section className={window.matchMedia("(max-width: 768px)") ? 'home swipe' : 'home'}>
       <div className="home__title">
         <h2 className="subtitle">Привет! Я,</h2>
         <h1 className="title">Скарбинский <br /> Виталий</h1>

@@ -2,7 +2,7 @@ import './Main.scss'
 import React from 'react'
 
 const Main = (props) => {
-  const main = document.querySelector('.main')
+
   const { section: showContentSection, setSection: setShowContentSection } = props
 
   let xDown = null;
@@ -30,22 +30,14 @@ const Main = (props) => {
         if (newSection === props.content.length) {
           newSection = 0
         }
-        setShowContentSection(newSection)
-        main.classList.add('active')
-        setTimeout(() => {
-          main.classList.remove('active')
-        }, 1000)
+        changeSectionAnimation(newSection)
       } else {
         /* right swipe */
         let newSection = showContentSection - 1
         if (newSection < 0) {
           newSection = props.content.length - 1
         }
-        setShowContentSection(newSection)
-        main.classList.add('active')
-        setTimeout(() => {
-          main.classList.remove('active')
-        }, 1000)
+        changeSectionAnimation(newSection)
 
       }
     }
@@ -54,7 +46,16 @@ const Main = (props) => {
     yDown = null;
   };
 
-
+  const changeSectionAnimation = (section) => {
+    const main = document.querySelector('.main')
+    main.classList.add('active')
+    setTimeout(() => {
+      setShowContentSection(section)
+    }, 200)
+    setTimeout(() => {
+      main.classList.remove('active')
+    }, 1000)
+  }
   return (
     <main className="main"
       onTouchStart={handleTouchStart}

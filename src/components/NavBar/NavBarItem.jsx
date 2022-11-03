@@ -15,8 +15,8 @@ const NavBarItem = (props) => {
       navItem.forEach(elem => {
         elem.classList.remove('active')
       })
-      currBtn.classList.add('active')
       props.onChangeSection(+navItemKey)
+      currBtn.classList.add('active')
     }, 200)
     setTimeout(() => {
       main.classList.remove('active')
