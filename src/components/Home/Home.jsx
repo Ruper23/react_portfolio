@@ -1,7 +1,16 @@
 import './Home.scss'
 const Home = () => {
+  const swipeAnimation = () => {
+
+    if (window.matchMedia("(max-width: 768px)")) {
+      document.querySelector('.home').classList.add('swipe')
+
+    }
+  }
+
+
   return (
-    <section className="home">
+    <section className="home" onLoad={swipeAnimation}>
       <div className="home__title">
         <h2 className="subtitle">Привет! Я,</h2>
         <h1 className="title">Скарбинский <br /> Виталий</h1>

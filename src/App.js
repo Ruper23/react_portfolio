@@ -43,7 +43,7 @@ const App = () => {
       section: <Portfolio />
     },
   ]
-  let [section, setSection] = useState('0')
+  let [section, setSection] = useState(0)
 
   const changeSection = (section) => {
 
@@ -55,7 +55,8 @@ const App = () => {
       <NavBar onChangeSection={changeSection} />
       <Main
         content={content}
-        section={section} />
+        section={section}
+        setSection={setSection} />
     </div>
 
   )

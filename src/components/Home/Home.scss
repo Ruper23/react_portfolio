@@ -6,7 +6,36 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
 
+.home.swipe{
+  position: relative;
+
+  &:before,&:after{
+    content: 'Swipe';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 60px;
+    @include adaptiv-font(96, 40,100,50);
+    font-family: 'Days One';
+    color: rgba($color: $color_blue, $alpha: .2);
+    animation: hide .5s forwards ease-in-out 2.8s;
+  }
+  &:after{
+    content: '<<<';
+    bottom: 110px;
+    transform: translateX(0%);
+    animation: swipe 2.5s infinite ease-in-out;
+  }
+}
+@keyframes swipe{
+  0%{transform: translateX(0%); opacity: 1;}
+  100%{transform: translateX(-100%); opacity: 0;}
+}
+@keyframes hide{
+  0%{ opacity: 1;}
+  100%{ opacity: 0;}
 }
 .home__title{
   display: flex;

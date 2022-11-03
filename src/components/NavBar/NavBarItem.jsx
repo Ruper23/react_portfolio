@@ -16,7 +16,7 @@ const NavBarItem = (props) => {
         elem.classList.remove('active')
       })
       currBtn.classList.add('active')
-      props.onChangeSection(navItemKey)
+      props.onChangeSection(+navItemKey)
     }, 200)
     setTimeout(() => {
       main.classList.remove('active')

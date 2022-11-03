@@ -2,12 +2,8 @@ import './Main.scss'
 import React from 'react'
 
 const Main = (props) => {
-  let showContentSection = props.section
-
-  // const setNewSection = () => {
-  //   showContentSection = props.section
-  // }
-  //setNewSection(showContentSection)
+  const main = document.querySelector('.main')
+  const { section: showContentSection, setSection: setShowContentSection } = props
 
   let xDown = null;
   let yDown = null;
@@ -30,18 +26,27 @@ const Main = (props) => {
     if (Math.abs(xDiff) > Math.abs(yDiff)) {
       if (xDiff > 0) {
         /* left swipe */
-        showContentSection--
-        if (showContentSection < 0) {
-          showContentSection = props.content.length - 1
+        let newSection = showContentSection + 1
+        if (newSection === props.content.length) {
+          newSection = 0
         }
-        console.log(showContentSection);
+        setShowContentSection(newSection)
+        main.classList.add('active')
+        setTimeout(() => {
+          main.classList.remove('active')
+        }, 1000)
       } else {
         /* right swipe */
-        showContentSection++
-        if (showContentSection === props.content.length) {
-          showContentSection = 0
+        let newSection = showContentSection - 1
+        if (newSection < 0) {
+          newSection = props.content.length - 1
         }
-        console.log(showContentSection);
+        setShowContentSection(newSection)
+        main.classList.add('active')
+        setTimeout(() => {
+          main.classList.remove('active')
+        }, 1000)
+
       }
     }
     /* reset values */
@@ -51,11 +56,10 @@ const Main = (props) => {
 
 
   return (
-    <main className="main">
-      <div className="main-wrap"
-        onTouchStart={handleTouchStart}
-        onTouchMove={handleTouchMove}
-        /* onClick={() => console.log(showContentSection)} */>
+    <main className="main"
+      onTouchStart={handleTouchStart}
+      onTouchMove={handleTouchMove}>
+      <div className="main-wrap" >
         {props.content[showContentSection].section}
       </div>
     </main>
