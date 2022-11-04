@@ -15,7 +15,9 @@
   margin: 40px 0 20px;
  }
 }
-
+.nav__body.blocked{
+  pointer-events: none;
+}
 .nav__item{
   @include menu-text;
   line-height: 60px;

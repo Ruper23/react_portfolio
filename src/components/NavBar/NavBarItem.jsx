@@ -11,6 +11,7 @@ const NavBarItem = (props) => {
       return
     }
     main.classList.add('active')
+    navBody.classList.add('blocked')
     setTimeout(() => {
       navItem.forEach(elem => {
         elem.classList.remove('active')
@@ -20,6 +21,7 @@ const NavBarItem = (props) => {
     }, 200)
     setTimeout(() => {
       main.classList.remove('active')
+      navBody.classList.remove('blocked')
     }, 1000)
 
   }
