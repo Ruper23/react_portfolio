@@ -38,7 +38,6 @@ const Main = (props) => {
           newSection = props.content.length - 1
         }
         changeSectionAnimation(newSection)
-
       }
     }
     /* reset values */

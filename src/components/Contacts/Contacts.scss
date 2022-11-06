@@ -42,7 +42,7 @@
     @media (max-width:1120px) {
       grid-template-columns: repeat(1,1fr);
       gap: 30px;
-      min-width: 410px;
+      min-width: 310px;
       margin: 0 auto;
     }
     @media (max-width: 375px){
@@ -86,4 +86,6 @@
 .contats__list-item i {
   color: $color_blue_active;
   font-size: 30px;
+  width: 38px;
+  text-align: center;
 }
