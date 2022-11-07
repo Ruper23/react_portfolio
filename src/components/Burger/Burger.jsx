@@ -1,5 +1,5 @@
 import './Burger.scss'
-import React from 'react';
+
 
 const Burger = () => {
   const burgerMenuHandler = () => {

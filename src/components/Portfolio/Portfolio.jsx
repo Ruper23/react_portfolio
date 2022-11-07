@@ -1,6 +1,5 @@
 import './Portfolio.scss'
 import PortfolioCard from './PortfolioCard'
-import React from 'react'
 
 const Portfolio = () => {
   const cards = [

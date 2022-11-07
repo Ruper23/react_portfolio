@@ -31,16 +31,9 @@
   border-radius: 20px;
   box-shadow: 0 0 60px 1px $color_blue_active;
   cursor: pointer;
- object-fit: cover;
- width: 100%;
+  object-fit: cover;
+  width: 100%;
 }
-// .course__img-modal.active{
-//   scale: 11;
-//   width: 60%;
-//   height: 50%;
-//   backdrop-filter: blur(100px);
-// }
-
 .course__title{
   @include menu-text;
   align-self: center;

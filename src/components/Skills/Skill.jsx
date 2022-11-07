@@ -1,7 +1,5 @@
 import './Skill.scss'
 
-
-
 const Skill = props => {
   let skillBarHeight = props.skillPercent + '%'
 

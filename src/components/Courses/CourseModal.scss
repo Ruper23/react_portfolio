@@ -21,12 +21,12 @@
 .modal__content{
   border-radius: 10px;
   transition: 0.3s all;
-  scale: 0.1;
+  transform:  scale(0.1);
   width: 60%;
   @media (max-width: 425px){
     width:85%;
   }
 }
 .modal__content.active{
-  scale: 1;
+  transform:  scale(1);
 }
