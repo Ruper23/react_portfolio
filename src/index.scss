@@ -1,8 +1,22 @@
+/* ===================================@import fonts========================================= */
 @font-face {
   font-family: 'Days One';
+  font-display: swap;
   src: url('fonts/Days One.ttf');
 }
+@font-face {
+  font-family: 'Montserrat';
+  font-display: swap;
+  src: url('fonts/Montserrat.ttf');
+}
 
+@font-face {
+  font-family: 'Montserrat-SemiBold';
+  font-display: swap;
+  src: url('fonts/Montserrat-SemiBold.ttf');
+}
+
+/* ======================================================================================== */
 
 $container: clamp(320px,100%,1440px);
 $color_black: #000000;
@@ -37,7 +51,7 @@ $maxWidth: 1440;
 }
 
 @mixin menu-text {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat-SemiBold';
   font-style: normal;
   font-weight: 600;
   @include adaptiv-font(36, 24,44,26);  
@@ -57,7 +71,7 @@ $maxWidth: 1440;
   color: $color_white;
 }
 @mixin h3-text {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat-SemiBold';
   font-style: normal;
   font-weight: 600;
   @include adaptiv-font(45, 28,55,38);
@@ -132,7 +146,7 @@ input {
 body{
   background: url('../public/img/background2.jpg') 0 0 / cover no-repeat;
   background-attachment: fixed;
-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
 }
 #root{
   height: 100%;
